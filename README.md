@@ -1,4 +1,3 @@
-## Bash Scripts
+## Bash Scripting no Linux
 
-Bash Scripts para automatizar algumas atividades. Os scripts foram feitos para as distribuições
-Ubuntu 22.04.
+Este repositório contém alguns Bash Scripts para automatizar atividades no Linux. Os scripts foram feitos para a distribuição Ubuntu 22.04.
