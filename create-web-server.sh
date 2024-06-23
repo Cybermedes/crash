@@ -9,8 +9,8 @@ apt-get install unzip -y
 
 echo "Baixando e copiando os arquivos da aplicação..."
 
-cd /tmp
+cd /tmp || exit
 wget https://github.com/denilsonbonatti/linux-site-dio/archive/refs/heads/main.zip
 unzip main.zip
-cd linux-site-dio-main
-cp -R * /var/www/html/
+cd linux-site-dio-main || exit
+cp -R ./* /var/www/html/

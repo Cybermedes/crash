@@ -1,19 +1,18 @@
 #!/usr/bin/env bash
-#Checar atualizações presentes e instalar
+# Updates the packages installed on your OS
+# For OSs that uses APT as package manager
 
-echo "
----------------------------
-Checando atualizações
----------------------------
-"
-sudo apt update -y
+echo "---------------------------"
+echo "Check updates"
+echo "---------------------------"
 
-sudo apt full-upgrade -y
+sudo apt update
+sudo apt full-upgrade
+sudo apt autoremove
 
-sudo apt autoremove -y
+# Update Snap store and its apps, if it's installed
+sudo snap refresh 
 
-echo "
-----------------------------------
-Atualizações finalizadas
-----------------------------------
-"
+echo "----------------------------------"
+echo "Update completed"
+echo "----------------------------------"

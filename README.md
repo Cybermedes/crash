@@ -1,30 +1,33 @@
-## O que são Bash scripts?
+## What are Bash Scripts?
 
-Os *Bash scripts* são arquivos de texto que contêm um ou mais comandos e instruções que podem ser executados por um interpretador de *shell Bash*, presente em sistemas operacionais baseados em Unix e Linux.
+The *Bash scripts* are text files that contains one or more instructions or commands that are executed by the
+*Bash Shell*, a CLI (command-line interface) for Unix-based operating systems.
 
-Eles são utilizados para automatizar tarefas, executar comandos de sistema, manipular arquivos e diretórios, gerenciar processos e outras atividades. 
+These scripts are used to automate tasks, execute system commands, manipulate files and directories, manage processes and other activities.
 
-Este repositório contém alguns *Bash Scripts* para automatizar atividades no Linux. Os scripts foram feitos para a distribuição Ubuntu 22.04.
+They are written in a scrippting language known as *Bash* (Bourne Again Shell). This language provide features from programming languages to extend the capabilities of scripts like, looping, checing coditionals, creating and assigning values to variables and arrays and etc.
 
-## O que é um *Shebang*?
+This repository contains some *scripts* to automate some tasks on Linux or just some cool projects. The main OS system used here was Fedora 40 (some commands may not work properly on other Linux distributions).
 
-Todo *Bash script*, além da extensão `.sh`, começam com um comando na primeira linha que serve para o *shell* saber qual programa utilizar para executar o *script*. Dois tipos comuns de *shebangs* para *Bash* são:
+## What is a *Shebang*?
 
-1. `#!/usr/bin/env bash`: caminho absoluto, recomendado para OS pois o sistema ira executar o Bash onde quer que esteja instalado
-2. `#!/bin/bash`: recomendado para emuladores pois esses apenas usam os diretórios necessários
+Every *Bash script*, besides the file extension `.sh`, they all start with a special line at the first line. This command is used by the shell to locate where the interpreter is installed and run the script. There are three main ways to run a script:
 
-## Como executar um Bash script
+1. `#!/usr/bin/env bash`: recommend way, a program called `env` will execute the `bash` wherever the file is located
+2. `#!/bin/bash`: shortest way
+3. `bash *.sh`: if you don't specify the shebang at the beginning
 
-*Bash scripts* foram criados para serem executados em sistemas operacionais baseados em Unix, Linux e macOS. Para executar um *script* caso não tenha um terminal *shell*:
+## How to execute a Bash Script?
 
-1. Usar uma *Virtual Machines* (VirtualBox, VMWare) com alguma distribuição Linux
-2. Emulador de terminal como *Git Bash*
-3. OS em alguma *cloud* como AWS, *Google Cloud Platform*, *Microsoft Azure*
-4. Contêineres *Docker* com alguma OS Linux
-5. Terminal do [*VS Code*](https://code.visualstudio.com/) ou *Codespaces* do *GitHub*
-6. [*Windows subsystem for Linux*](https://learn.microsoft.com/en-us/windows/wsl/about)
+The *Bash Scripts* were designed to be executed on Unix-based operating systems. Bash is shipped by default on most of the Linux distributions (Zash for recent MacOS versions), so these scripts are not going to work on native Windows. For Windows, there is PowerShell and Batch scripts, which are not covered in this repository. In case, you are not in a Linux or MacOS, these are some suggestions for you to get a terminal with Bash:
+
+1. Use a *Virtual Machine* (VirtualBox, VMWare) with a Linux distro
+2. *Git Bash* emulator for Windows
+3. *Docker* container running a Linux distro
+4. [*VS Code*](https://code.visualstudio.com/) or *Codespaces* from *GitHub*
+5. [*Windows subsystem for Linux*](https://learn.microsoft.com/en-us/windows/wsl/about)
 
 
-Para executar um *script* digite no terminal os comandos:
+To execute a script, type on the terminal the commands:
 * `bash filename.sh`
 * `./filename.sh`
