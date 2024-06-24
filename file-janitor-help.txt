@@ -8,3 +8,5 @@ Usage: file-janitor [option] [file_path]
         list        displays the files in the directory, if no
                     file path is provided, the current working
                     directory will be used instead
+        report
+        clean
